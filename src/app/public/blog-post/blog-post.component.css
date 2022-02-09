@@ -1,0 +1,23 @@
+.form-signin{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+
+}
+.sr-only{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    text-decoration-color: blueviolet;
+    font-style: oblique;
+    color: rgb(117, 103, 84);
+    border-style: initial;
+}
+.h1{
+    text-align: center;
+    padding: auto;
+    transition: all;
+}
+.list_group{
+    margin-left: 0px;
+    margin-right: 30px;
+}

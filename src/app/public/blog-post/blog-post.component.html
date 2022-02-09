@@ -1,0 +1,28 @@
+<h1 class="h1">blog-post works!</h1>
+
+<form [formGroup]="postForm" autocomplete="off" class="form-signin" (ngSubmit)="onSubmit()">
+    <label for="title" class="sr-only">Title</label>
+    <input type="text" formControlName="title" class="form-control">
+
+    <label for="body" class="sr-only">Body</label>
+    <textarea formControlName="body" class="form-control"  rows="4"></textarea>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
+</form>
+
+
+<ul class="list_group">
+    <li
+    *ngFor="let post of dataList"
+    class="list-group-item">
+    <button class="btn btn-default btn-sm" (click)="editPost(post)">Edit</button>
+    <button class="btn btn-default btn-sm" (click)="deletePost(post)">Delete</button>
+    <div>
+        <strong>{{ post.id }}.{{post.title}}</strong>
+    </div>
+    <div>
+        {{post.body}}
+    </div>
+</li>
+    
+</ul>
+
